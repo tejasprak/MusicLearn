@@ -1,0 +1,29 @@
+<html>
+<body bgcolor="#1db954">
+{% load static %}
+<link type="text/css" rel="stylesheet" href="{% static "musiclearn/main.css" %}"/>
+  <h1 align=middle>Welcome to MusicLearn.</h1>
+  <p align="middle">Listen to more.</p>  <br><br><br>
+    <h3 align="middle"> Enter a song you're feeling right now. </h3>
+
+    <form align="middle" method="POST">
+
+      {{ form.as_p }}<br/>
+    <input  type = "submit" name = "submit" value = "Go">
+    </form>
+    <p align="middle">{{recstring}}</p>
+    <br>
+    {% if bool is not None %}
+    <p>{{one}}</p> <a href="{{linkone}}" target="_blank"><img src="{% static "musiclearn/spotify.png" %}" alt="Link1" style="width:18%;height:auto;border:0;;"></a>
+    <br>
+    <p>{{two}}</p> <a href="{{linktwo}}" target="_blank"><img src="{% static "musiclearn/spotify.png" %}" alt="Link1" style="width:18%;height:auto;border:0;"></a>
+    <br>
+    <p>{{three}}</p> <a href="{{linkthree}}" target="_blank"><img src="{% static "musiclearn/spotify.png" %}" alt="Link1" style="width:18%;height:auto;border:0;"></a>
+    <br>
+    <p>{{four}}</p> <a href="{{linkfour}}" target="_blank"><img src="{% static "musiclearn/spotify.png" %}" alt="Link1" style="width:18%;height:auto;border:0;"></a>
+    <br>
+    <p>{{five}}</p> <a href="{{linkfive}}" target="_blank"><img src="{% static "musiclearn/spotify.png" %}" alt="Link1" style="width:18%;height:auto;border:0;"></a>
+    <br>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,8 @@
+@font-face{
+font-family: montserrat;
+src: url('Montserrat.ttf');
+}
+
+p {font-family: montserrat; color:#535353; font-size:22px;}
+h1 {font-family: montserrat; color:#535353; font-size: 40px;}
+h3 {font-family: montserrat; color:#535353;}
