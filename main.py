@@ -57,7 +57,7 @@ def find_percent(string):
 lyrics = PyLyrics.getLyrics(initial_artist,initial_song)
 initial = find_percent(lyrics)[0]
 
-client_credentials_manager = SpotifyClientCredentials(client_id='6d97c2f902d54748a76360adf94c0c9b', client_secret='44bc5c4bbc22479a984d747e20e0ba48')
+client_credentials_manager = SpotifyClientCredentials(client_id='', client_secret='')
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 rec_songs=[]
